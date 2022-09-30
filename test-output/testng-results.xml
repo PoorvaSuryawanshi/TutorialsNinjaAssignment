@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="3" failed="1" skipped="3">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-21T15:56:03 EDT" name="Default suite" finished-at="2022-08-21T15:56:43 EDT" duration-ms="40246">
+    <groups>
+    </groups>
+    <test started-at="2022-08-21T15:56:03 EDT" name="Default test" finished-at="2022-08-21T15:56:43 EDT" duration-ms="40246">
+      <class name="TutorialsNinja.TutorialsNinjaDemo1">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:03 EDT" name="driverSetup" finished-at="2022-08-21T15:56:10 EDT" duration-ms="7041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverSetup -->
+        <test-method signature="orderCamera()[pri:1, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:10 EDT" name="orderCamera" finished-at="2022-08-21T15:56:16 EDT" duration-ms="5885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderCamera -->
+        <test-method signature="orderProductIphone()[pri:2, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:16 EDT" name="orderProductIphone" finished-at="2022-08-21T15:56:22 EDT" duration-ms="5736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProductIphone -->
+        <test-method signature="checkoutIphone()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:22 EDT" name="checkoutIphone" finished-at="2022-08-21T15:56:23 EDT" depends-on-methods="TutorialsNinja.TutorialsNinjaDemo1.orderProductIphone" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutIphone -->
+        <test-method signature="orderProductMacBook()[pri:3, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:23 EDT" name="orderProductMacBook" finished-at="2022-08-21T15:56:33 EDT" duration-ms="10024" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div//div[contains(@class,'caption')]//a[contains(text(),'MacBook')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'MacBook-Air-Poorva.local', ip: 'fe80:0:0:0:1009:5fb6:dd13:9ecc%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.3', java.version: '17.0.4'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div//div[contains(@class,'caption')]//a[contains(text(),'MacBook')] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'MacBook-Air-Poorva.local', ip: 'fe80:0:0:0:1009:5fb6:dd13:9ecc%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.3', java.version: '17.0.4'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at TutorialsNinja.TutorialsNinjaDemo1.orderProductMacBook(TutorialsNinjaDemo1.java:227)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderProductMacBook -->
+        <test-method signature="checkouProductMacBook()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:33 EDT" name="checkouProductMacBook" finished-at="2022-08-21T15:56:33 EDT" depends-on-methods="TutorialsNinja.TutorialsNinjaDemo1.orderProductMacBook" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TutorialsNinja.TutorialsNinjaDemo1.checkouProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.orderProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TutorialsNinja.TutorialsNinjaDemo1.checkouProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.orderProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkouProductMacBook -->
+        <test-method signature="accountAndBillingDetails()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:33 EDT" name="accountAndBillingDetails" finished-at="2022-08-21T15:56:33 EDT" depends-on-methods="TutorialsNinja.TutorialsNinjaDemo1.checkouProductMacBook" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TutorialsNinja.TutorialsNinjaDemo1.accountAndBillingDetails() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.checkouProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TutorialsNinja.TutorialsNinjaDemo1.accountAndBillingDetails() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.checkouProductMacBook() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountAndBillingDetails -->
+        <test-method signature="contactUs()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:33 EDT" name="contactUs" finished-at="2022-08-21T15:56:33 EDT" depends-on-methods="TutorialsNinja.TutorialsNinjaDemo1.accountAndBillingDetails" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TutorialsNinja.TutorialsNinjaDemo1.contactUs() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.accountAndBillingDetails() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TutorialsNinja.TutorialsNinjaDemo1.contactUs() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8 depends on not successfully finished methods 
+[TutorialsNinja.TutorialsNinjaDemo1.accountAndBillingDetails() on instance TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TutorialsNinja.TutorialsNinjaDemo1@1ddf84b8]" started-at="2022-08-21T15:56:33 EDT" name="closeDriver" finished-at="2022-08-21T15:56:43 EDT" duration-ms="10117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- TutorialsNinja.TutorialsNinjaDemo1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
